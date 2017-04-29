@@ -6,15 +6,20 @@
     <script type="text/javascript" src="/weibo/Public/Home/js/jquery.js"></script>
     <script type="text/javascript" src="/weibo/Public/Home/js/login.js"></script>
     <script type="text/javascript" src="/weibo/Public/Home/js/jquery.ui.js"></script>
+    <script type="text/javascript" src="/weibo/Public/Home/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/weibo/Public/Home/js/jquery.validate.js"></script>
     <link rel="stylesheet" href="/weibo/Public/Home/css/jquery.ui.css"/>
     <link rel="stylesheet" href="/weibo/Public/Home/css/login.css"/>
     <script type="text/javascript">
         var ThinkPHP = {
-            'IMG' : '/weibo/Public/<?php echo MODULE_NAME;?>/img',
+            'MODULE' : '/weibo/Home',
+            'IMG' : '/weibo/Public/<?php echo MODULE_NAME;?>/img'
         };
     </script>
 </head>
 <body>
+
+/weibo/Home
 
 <div id="header"></div>
 
@@ -36,25 +41,25 @@
     @2009-2016 俱乐部. Powered by ThinkPHP.
 </div>
 
-<div id="register">
-    <form>
-        <p>
-            <label for="user">账号：</label>
-            <input type="text" name="user" class="text" id="user" placeholder="呢称，不小于两位！"/>
-            <span class="star">*</span>
-        </p>
-        <p>
-            <label for="pass">密码：</label>
-            <input type="text" name="user" class="text" id="pass" placeholder="密码，不小于两位！"/>
-            <span class="star">*</span>
-        </p>
-        <p>
-            <label for="email">邮箱：</label>
-            <input type="text" name="user" class="text" id="email" placeholder="电子邮箱，用于找回密码！"/>
-            <span class="star">*</span>
-        </p>
-    </form>
-</div>
+
+<form id="register">
+    <p>
+        <label for="user">账号：</label>
+        <input type="text" name="username" class="text" id="user" placeholder="呢称，不小于两位！"/>
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="pass">密码：</label>
+        <input type="text" name="password" class="text" id="pass" placeholder="密码，不小于两位！"/>
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="email">邮箱：</label>
+        <input type="text" name="email" class="text" id="email" placeholder="电子邮箱，用于找回密码！"/>
+        <span class="star">*</span>
+    </p>
+</form>
+
 
 </body>
 </html>

@@ -6,15 +6,20 @@
     <script type="text/javascript" src="__JS__/jquery.js"></script>
     <script type="text/javascript" src="__JS__/login.js"></script>
     <script type="text/javascript" src="__JS__/jquery.ui.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.form.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.validate.js"></script>
     <link rel="stylesheet" href="__CSS__/jquery.ui.css"/>
     <link rel="stylesheet" href="__CSS__/login.css"/>
     <script type="text/javascript">
         var ThinkPHP = {
-            'IMG' : '__PUBLIC__/{:MODULE_NAME}/img',
+            'MODULE' : '__MODULE__',
+            'IMG' : '__PUBLIC__/{:MODULE_NAME}/img'
         };
     </script>
 </head>
 <body>
+
+__MODULE__
 
 <div id="header"></div>
 
@@ -36,25 +41,25 @@
     @2009-2016 俱乐部. Powered by ThinkPHP.
 </div>
 
-<div id="register">
-    <form>
-        <p>
-            <label for="user">账号：</label>
-            <input type="text" name="user" class="text" id="user" placeholder="呢称，不小于两位！"/>
-            <span class="star">*</span>
-        </p>
-        <p>
-            <label for="pass">密码：</label>
-            <input type="text" name="user" class="text" id="pass" placeholder="密码，不小于两位！"/>
-            <span class="star">*</span>
-        </p>
-        <p>
-            <label for="email">邮箱：</label>
-            <input type="text" name="user" class="text" id="email" placeholder="电子邮箱，用于找回密码！"/>
-            <span class="star">*</span>
-        </p>
-    </form>
-</div>
+
+<form id="register">
+    <p>
+        <label for="user">账号：</label>
+        <input type="text" name="username" class="text" id="user" placeholder="呢称，不小于两位！"/>
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="pass">密码：</label>
+        <input type="text" name="password" class="text" id="pass" placeholder="密码，不小于两位！"/>
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="email">邮箱：</label>
+        <input type="text" name="email" class="text" id="email" placeholder="电子邮箱，用于找回密码！"/>
+        <span class="star">*</span>
+    </p>
+</form>
+
 
 </body>
 </html>

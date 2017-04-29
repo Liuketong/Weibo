@@ -19,10 +19,17 @@ $(function () {
         closeText:'关闭',
         buttons:[{
             text:'提交',
-            click:function(e){
-
+            click:function(){
+                $(this).submit();
             }
         }]
+    }).validate({
+        submitHandler: function(form){
+            $(form).ajaxSubmit({
+                url : ThinkPHP['MODULE'] + '/User/register',
+                type:'POST'
+            });
+        }
     });
 
     //点击注册
