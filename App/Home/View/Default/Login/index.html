@@ -19,8 +19,6 @@
 </head>
 <body>
 
-__MODULE__
-
 <div id="header"></div>
 
 <div id="main">
@@ -44,13 +42,18 @@ __MODULE__
 
 <form id="register">
     <p>
-        <label for="user">账号：</label>
-        <input type="text" name="username" class="text" id="user" placeholder="呢称，不小于两位！"/>
+        <label for="username">账号：</label>
+        <input type="text" name="username" class="text" id="username" placeholder="呢称，不小于两位！"/>
         <span class="star">*</span>
     </p>
     <p>
-        <label for="pass">密码：</label>
-        <input type="text" name="password" class="text" id="pass" placeholder="密码，不小于两位！"/>
+        <label for="password">密码：</label>
+        <input type="text" name="password" class="text" id="password" placeholder="密码，不小于两位！"/>
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="repassword">确认：</label>
+        <input type="text" name="repassword" class="text" id="repassword" placeholder="密码和密码确认必须一致！"/>
         <span class="star">*</span>
     </p>
     <p>

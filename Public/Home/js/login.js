@@ -11,7 +11,7 @@ $(function () {
     //创建注册对话框
     $('#register').dialog({
         width:430,
-        height:330,
+        height:370,
         title:'注册新用户',
         modal:true,
         resizable:false,
