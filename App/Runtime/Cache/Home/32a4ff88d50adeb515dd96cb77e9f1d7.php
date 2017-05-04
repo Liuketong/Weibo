@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>微博系统--登录首页</title>
-    <script type="text/javascript" src="/Weibo1/Public/Home/js/jquery.js"></script>
-    <script type="text/javascript" src="/Weibo1/Public/Home/js/login.js"></script>
-    <script type="text/javascript" src="/Weibo1/Public/Home/js/jquery.ui.js"></script>
-    <script type="text/javascript" src="/Weibo1/Public/Home/js/jquery.form.js"></script>
-    <script type="text/javascript" src="/Weibo1/Public/Home/js/jquery.validate.js"></script>
-    <link rel="stylesheet" href="/Weibo1/Public/Home/css/jquery.ui.css"/>
-    <link rel="stylesheet" href="/Weibo1/Public/Home/css/login.css"/>
+    <script type="text/javascript" src="/Weibo/Public/Home/js/jquery.js"></script>
+    <script type="text/javascript" src="/Weibo/Public/Home/js/login.js"></script>
+    <script type="text/javascript" src="/Weibo/Public/Home/js/jquery.ui.js"></script>
+    <script type="text/javascript" src="/Weibo/Public/Home/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/Weibo/Public/Home/js/jquery.validate.js"></script>
+    <link rel="stylesheet" href="/Weibo/Public/Home/css/jquery.ui.css"/>
+    <link rel="stylesheet" href="/Weibo/Public/Home/css/login.css"/>
     <script type="text/javascript">
         var ThinkPHP = {
-            'MODULE' : '/Weibo1/Home',
-            'IMG' : '/Weibo1/Public/<?php echo MODULE_NAME;?>/img'
+            'MODULE' : '/Weibo/Home',
+            'IMG' : '/Weibo/Public/<?php echo MODULE_NAME;?>/img'
         };
     </script>
 </head>
@@ -41,6 +41,7 @@
 
 
 <form id="register">
+    <ol class="register_errors"></ol>
     <p>
         <label for="username">账号：</label>
         <input type="text" name="username" class="text" id="username" placeholder="呢称，不小于两位！"/>
